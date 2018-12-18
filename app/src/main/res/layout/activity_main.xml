@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.makanbang.MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/ayambakar"
+        android:src="@drawable/ayambakar"
+        android:layout_above="@+id/textView3"
+        android:layout_toLeftOf="@+id/judul"
+        android:layout_toStartOf="@+id/judul" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/bakso"
+        android:src="@drawable/bakso"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignStart="@+id/logo" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/nasgor"
+        android:src="@drawable/nasgor"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/ayambakar"
+        android:layout_alignStart="@+id/ayambakar" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/nasigudeg"
+        android:src="@drawable/nasigudeg"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/judul"
+        android:layout_toEndOf="@+id/judul" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/rendang"
+        android:src="@drawable/rendang"
+        android:layout_alignTop="@+id/nasgor"
+        android:layout_alignLeft="@+id/nasigudeg"
+        android:layout_alignStart="@+id/nasigudeg" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:textColor="#228B22"
+        android:textStyle="bold"
+        android:text="Resep Masakan Indonesia"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayam Bakar"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/ayambakar"
+        android:layout_alignStart="@+id/ayambakar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bakso"
+        android:layout_below="@+id/bakso"
+        android:layout_alignLeft="@+id/bakso"
+        android:layout_alignStart="@+id/bakso"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Gudeg"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/nasigudeg"
+        android:layout_alignStart="@+id/nasigudeg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng"
+        android:id="@+id/textView4"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_below="@+id/nasgor"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendang"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/rendang"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="About Apps"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button_exit"
+        android:layout_toStartOf="@+id/button_exit"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_alignBaseline="@+id/button_about"
+        android:layout_alignBottom="@+id/button_about"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
